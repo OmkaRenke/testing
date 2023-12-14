@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-boxs;
+}
+.logos-slide img{
+  height: 50px;
+  display: inline;
+  margin: 0 40px;
+}
+.logos{
+  overflow: hidden;
+  padding: 60px 0;
+  background: rgb(27, 5, 10);
+  white-space: nowrap;
+
+}
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+}
+.logos-slide{
+  display: inline-block;
+  animation: slide 30s  infinite linear;
+}
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+
+  }
+}
